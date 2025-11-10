@@ -36,7 +36,7 @@ Play against a friend on the same device with a responsive and visually appealin
 ## 🌐 Live Demo
 
 Click the link below to play Tic Tac Toe online:  
-[🔗 Tic Tac Toe](https://sharmikachenna.github.io/tic-tac-toe -project/)
+[🔗 Tic Tac Toe](https://sharmikachenna.github.io/tic-tac-toe-project/)
 
 
 ---
