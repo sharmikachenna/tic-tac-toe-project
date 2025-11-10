@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tic Tac Toe</title>
+
+  <!-- Link external CSS for styling -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Main container for the entire game -->
+  <div class="container">
+    
+    <!-- Game title -->
+    <h1>Let's Play Tic Tac Toe</h1>
+
+    <!-- Status area to display turn or game result -->
+    <div id="status" aria-live="polite">Player X's Turn</div>
+
+    <!-- 3x3 grid board for the Tic Tac Toe game -->
+    <div class="board" id="board">
+      <!-- Each cell represents one square on the board -->
+      <div class="cell" data-index="0" role="button" tabindex="0" aria-label="Cell 1"></div>
+      <div class="cell" data-index="1" role="button" tabindex="0" aria-label="Cell 2"></div>
+      <div class="cell" data-index="2" role="button" tabindex="0" aria-label="Cell 3"></div>
+      <div class="cell" data-index="3" role="button" tabindex="0" aria-label="Cell 4"></div>
+      <div class="cell" data-index="4" role="button" tabindex="0" aria-label="Cell 5"></div>
+      <div class="cell" data-index="5" role="button" tabindex="0" aria-label="Cell 6"></div>
+      <div class="cell" data-index="6" role="button" tabindex="0" aria-label="Cell 7"></div>
+      <div class="cell" data-index="7" role="button" tabindex="0" aria-label="Cell 8"></div>
+      <div class="cell" data-index="8" role="button" tabindex="0" aria-label="Cell 9"></div>
+    </div>
+
+    <!-- Button to reset or start a new game -->
+    <button id="gameBtn">Reset Game</button>
+  </div>
+
+  <!-- Link external JavaScript for game logic -->
+  <script src="script.js"></script>
+</body>
+</html>

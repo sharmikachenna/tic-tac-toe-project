@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Center game in the viewport */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Wrapper for all game elements */
+.container {
+  text-align: center;
+}
+
+/* Game title styling */
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+/* Status display styling */
+#status {
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+  color: #444;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+/* ============================
+   Game Board Styling
+   ============================ */
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Individual cell styling */
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: #ffffff;
+  border: 2px solid #ccc;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for cells */
+.cell:hover {
+  background-color: #e0f7fa;
+}
+
+/* Player-specific coloring */
+.cell.X {
+  color: #ff6f61;
+  background-color: #ffeaea;
+}
+
+.cell.O {
+  color: #3f51b5;
+  background-color: #e8eaf6;
+}
+
+/* ============================
+   Buttons
+   ============================ */
+button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* ============================
+   Winner Highlight & Animation
+   ============================ */
+.cell.winner {
+  background-color: #c8e6c9 !important;
+  border: 3px solid #2e7d32;
+  animation: glow 1s infinite alternate;
+}
+
+/* Glowing animation for winner cells */
+@keyframes glow {
+  from { box-shadow: 0 0 5px #66bb6a; }
+  to { box-shadow: 0 0 15px #43a047; }
+}
+
+/* ============================
+   Responsive Design
+   ============================ */
+@media (max-width: 600px) {
+  .board {
+    grid-template-columns: repeat(3, 70px);
+    gap: 8px;
+  }
+  .cell {
+    width: 70px;
+    height: 70px;
+    font-size: 1.5rem;
+  }
+}
