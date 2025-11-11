@@ -36,7 +36,7 @@ Play against a friend on the same device with a responsive and visually appealin
 ## 🌐 Live Demo
 
 Click the link below to play Tic Tac Toe online:  
-[🔗 Tic Tac Toe](https://sharmikachenna.github.io/tic-tac-toe-project/)
+## 👉[ Tic Tac Toe](https://sharmikachenna.github.io/tic-tac-toe-project/)
 
 
 ---
@@ -46,3 +46,10 @@ Click the link below to play Tic Tac Toe online:
 
 This Tic Tac Toe project demonstrates **DOM manipulation**, **event handling**, and **basic game logic** in JavaScript.  
 It’s a fun, interactive way to practice web development fundamentals while providing a polished user experience.
+
+
+
+---
+
+## 👤 Author
+Sharmika Chenna
